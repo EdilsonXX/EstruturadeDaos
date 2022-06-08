@@ -60,7 +60,7 @@ public class Lista {
 		
 		else {
 
-			Celula nova = new Celula(this.cauda, obj);
+			Celula nova = new Celula(obj);
 			this.cauda.setProxima(nova);
 			this.cauda = nova;
 			this.totalElementos++;
@@ -69,4 +69,3 @@ public class Lista {
 	}
 	
 }
-
