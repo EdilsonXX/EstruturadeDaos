@@ -76,6 +76,16 @@ public class Lista {
 		
 	}
 	
+	public void removerDoComeco () {
+		
+		Celula aux = this.cabeca;
+		this.cabeca = this.cabeca.getProxima();
+		aux.setProxima(null);
+
+		this.totalElementos--;
+	
+	}
+	
 	public void adicionarPorPosicao (Object obj, int posicao) {
 		
 		Celula aux = this.cabeca;
@@ -109,3 +119,4 @@ public class Lista {
 	}
 	
 }
+
