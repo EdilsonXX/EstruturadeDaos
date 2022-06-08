@@ -32,6 +32,10 @@ public class Principal {
 		
 		System.out.println(lista.toString());
 		
+		lista.adicionarPorPosicao("Corno", 50);
+		
+		System.out.println(lista.toString());
+		
 	}
 
 }
