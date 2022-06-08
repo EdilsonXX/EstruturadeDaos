@@ -1,5 +1,7 @@
 package br.ifba.edu.principal;
 
+import javax.swing.JOptionPane;
+
 import br.ifba.edu.lista.Lista;
 
 public class Principal {
@@ -32,9 +34,13 @@ public class Principal {
 		
 		System.out.println(lista.toString());
 		
-		lista.adicionarPorPosicao("Corno", 50);
+		lista.adicionarPorPosicao("Corno", 5);
 		
 		System.out.println(lista.toString());
+		
+		lista.removerDoComeco();
+		
+		JOptionPane.showMessageDialog(null, lista.toString());
 		
 	}
 
