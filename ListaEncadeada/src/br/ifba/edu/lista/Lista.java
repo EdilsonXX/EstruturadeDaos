@@ -49,5 +49,24 @@ public class Lista {
 		
 		return listaencadeada.toString();
 	}
+
+	public void adicionarNoFinal (Object obj) {
+		
+		if (this.totalElementos == 0) {
+
+			this.adicionarNoComeco(obj);
+		} 
+		
+		
+		else {
+
+			Celula nova = new Celula(this.cauda, obj);
+			this.cauda.setProxima(nova);
+			this.cauda = nova;
+			this.totalElementos++;
+
+		}
+	}
 	
 }
+
