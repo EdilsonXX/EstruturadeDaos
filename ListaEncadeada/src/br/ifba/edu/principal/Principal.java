@@ -14,9 +14,21 @@ public class Principal {
 		lista.adicionarNoComeco("Fulano");
 		lista.adicionarNoComeco("Sicrano");
 		lista.adicionarNoComeco("Beltrano");
-		lista.adicionarNoComeco("Jos�");
+		lista.adicionarNoComeco("José");
 		lista.adicionarNoComeco("Camila");
 		lista.adicionarNoComeco("Helena");
+		
+		System.out.println(lista.toString());
+		
+
+		lista.adicionarNoFinal("Igor");
+		lista.adicionarNoFinal("Maria");
+		lista.adicionarNoFinal("Fulano");
+		lista.adicionarNoFinal("Sicrano");
+		lista.adicionarNoFinal("Beltrano");
+		lista.adicionarNoFinal("José");
+		lista.adicionarNoFinal("Camila");
+		lista.adicionarNoFinal("Helena");
 		
 		System.out.println(lista.toString());
 		
