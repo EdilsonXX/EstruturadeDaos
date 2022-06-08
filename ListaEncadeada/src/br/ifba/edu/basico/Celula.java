@@ -11,6 +11,10 @@ public class Celula {
 		this.objeto = objeto;
 	}
 
+	public Celula(Object objeto) {
+		this.objeto = objeto;
+	}
+
 	public Celula() {
 		super();
 	}
