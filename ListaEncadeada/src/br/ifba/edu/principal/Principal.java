@@ -40,7 +40,15 @@ public class Principal {
 		
 		lista.removerDoComeco();
 		
-		JOptionPane.showMessageDialog(null, lista.toString());
+		System.out.println(lista.toString());
+		
+		lista.removerPorPosicao(3);
+		
+		System.out.println(lista.toString());
+		
+		lista.removerDoFinal();
+		
+		System.out.println(lista.toString());
 		
 	}
 
