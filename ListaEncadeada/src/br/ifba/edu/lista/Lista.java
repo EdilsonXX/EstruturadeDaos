@@ -118,5 +118,34 @@ public class Lista {
 			
 	}
 	
+	public void removerPorPosicao (int posicao) {
+	
+		Celula aux = this.cabeca;
+	
+		for (int cont = 0; cont < posicao - 1; cont++) {
+			
+			aux = aux.getProxima();	
+		}
+		
+		aux.setProxima(aux.getProxima().getProxima());
+		this.totalElementos--;
+		
+	}
+	
+	public void removerDoFinal () {
+		
+		Celula aux = this.cabeca;
+		Celula ant = this.cauda;
+		while (aux.getProxima() != null) {
+			
+			ant = aux;
+			aux = aux.getProxima();
+			
+		}
+		ant.setProxima(null);
+		this.cauda = ant;
+		this.totalElementos--;
+		
+	}
+	
 }
-
